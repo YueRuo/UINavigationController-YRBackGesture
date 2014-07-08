@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3D7C7E6C-B405-4828-BE33-3B6960A413D9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>YRBackGestureDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>81514E78-5472-4045-A728-0A8A718E182B</key>
+		<string>ssh://github.com/YueRuo/UINavigationController-YRBackGesture.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>YRBackGestureDemo/YRBackGestureDemo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>81514E78-5472-4045-A728-0A8A718E182B</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/YueRuo/UINavigationController-YRBackGesture.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>81514E78-5472-4045-A728-0A8A718E182B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>81514E78-5472-4045-A728-0A8A718E182B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>YRBackGesture</string>
+		</dict>
+	</array>
+</dict>
+</plist>
