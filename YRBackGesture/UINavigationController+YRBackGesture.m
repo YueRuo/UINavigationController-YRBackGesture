@@ -94,7 +94,7 @@ static const char *assoKeyEnableGesture="__yrakenabg";
 }
 
 -(void)willShowPreViewController{
-    int count=self.viewControllers.count;
+    NSInteger count=self.viewControllers.count;
     if (count>1) {
         UIViewController *currentVC = [self topViewController];
         UIViewController *preVC = [self.viewControllers objectAtIndex:count-2];
@@ -102,7 +102,7 @@ static const char *assoKeyEnableGesture="__yrakenabg";
     }
 }
 -(void)showPreViewController{
-    int count = self.viewControllers.count;
+    NSInteger count = self.viewControllers.count;
     if (count>1) {
         UIView *currentView = self.topViewController.view;
         NSTimeInterval animatedTime = 0;
@@ -116,8 +116,9 @@ static const char *assoKeyEnableGesture="__yrakenabg";
     }
 }
 -(void)hidePreViewController{
-    int count = self.viewControllers.count;
+    NSInteger count = self.viewControllers.count;
     if (count>1) {
+        UIViewController *preVC = [self.viewControllers objectAtIndex:count-2];
         UIView *currentView = self.topViewController.view;
         NSTimeInterval animatedTime = 0;
         animatedTime = ABS(self.view.frame.size.width - currentView.frame.origin.x) / self.view.frame.size.width * 0.35;
@@ -125,12 +126,13 @@ static const char *assoKeyEnableGesture="__yrakenabg";
         [UIView animateWithDuration:animatedTime animations:^{
             [self layoutCurrentViewWithOffset:UIOffsetMake(0, 0)];
         } completion:^(BOOL finished) {
+            [preVC.view removeFromSuperview];
         }];
     }
 }
 
 -(void)layoutCurrentViewWithOffset:(UIOffset)offset{
-    int count = self.viewControllers.count;
+    NSInteger count = self.viewControllers.count;
     if (count>1) {
         UIViewController *currentVC = [self topViewController];
         UIViewController *preVC = [self.viewControllers objectAtIndex:count-2];
