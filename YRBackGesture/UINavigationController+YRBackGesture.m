@@ -136,8 +136,8 @@ static const char *assoKeyEnableGesture="__yrakenabg";
     if (count>1) {
         UIViewController *currentVC = [self topViewController];
         UIViewController *preVC = [self.viewControllers objectAtIndex:count-2];
-        [currentVC.view setFrame:CGRectMake(offset.horizontal, self.view.bounds.origin.y, self.view.frame.size.width, self.view.frame.size.height)];
-        [preVC.view setFrame:CGRectMake(offset.horizontal/2-self.view.frame.size.width/2, self.view.bounds.origin.y, self.view.frame.size.width, self.view.frame.size.height)];
+        [currentVC.view setFrame:CGRectMake(offset.horizontal, self.view.bounds.origin.y, self.view.frame.size.width, currentVC.view.frame.size.height)];
+        [preVC.view setFrame:CGRectMake(offset.horizontal/2-self.view.frame.size.width/2, self.view.bounds.origin.y, self.view.frame.size.width, preVC.view.frame.size.height)];
     }
 }
 
