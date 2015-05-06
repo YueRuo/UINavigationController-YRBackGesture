@@ -78,6 +78,11 @@ static const char *assoKeyEnableGesture="__yrakenabg";
         }
     }
     if (!CGPointEqualToPoint(CGPointMake(xoffset, yoffset), currentView.frame.origin)) {
+        
+        if (xoffset <= 0) {//修复滑动过程中快速左滑会出现偏移或闪屏的bug
+            xoffset = 0;
+        }
+        
         [self layoutCurrentViewWithOffset:UIOffsetMake(xoffset, yoffset)];
     }
     if (self.panGestureRecognizer.state==UIGestureRecognizerStateEnded) {
